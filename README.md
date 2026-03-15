@@ -71,5 +71,5 @@ The **IntentTab extension** will now be installed and active.
 
 - Open a **new tab** — the IntentTab interface should appear.
 - Enter an intent (e.g., _Search React docs_) and click **Continue**.
-- Navigate to a website and verify the **floating intent widget** appears.
+- Navigate to a website and verify the **Title** of page (should have intent as well.
 - Click the **extension icon** to open the popup dashboard and view recent intents.
