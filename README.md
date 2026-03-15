@@ -4,8 +4,7 @@
 
 IntentTab is a productivity-focused Chrome Extension built with React + Vite that replaces the default Chrome New Tab page with a simple prompt asking:
 
-“Why did you open this tab?”
-
+#### “Why did you open this tab?”
 By encouraging users to define their intent before browsing, IntentTab helps reduce mindless tab opening, distraction, and tab overload.
 
 Once an intent is entered, the extension:
