@@ -1,16 +1,76 @@
-# React + Vite
+## IntentTab – Chrome Extension for Intent-Driven Browsing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Introduction
 
-Currently, two official plugins are available:
+IntentTab is a productivity-focused Chrome Extension built with React + Vite that replaces the default Chrome New Tab page with a simple prompt asking:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+“Why did you open this tab?”
 
-## React Compiler
+By encouraging users to define their intent before browsing, IntentTab helps reduce mindless tab opening, distraction, and tab overload.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Once an intent is entered, the extension:
 
-## Expanding the ESLint configuration
+- Saves the intent
+- Append it to the title of current page
+- Keeps a history of intents
+- Shows warnings if too many tabs are opened too quickly
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This creates a lightweight system to promote intentional browsing and focus.
+
+## Installation
+
+1. **Clone the repository**
+
+```bash
+git clone https://github.com/DeveloperAshish8/IntentTab.git
+cd IntentTab
+```
+
+2. **Install dependencies**
+
+Make sure you have **Node.js (v16 or later)** installed.
+
+```bash
+npm install
+```
+
+---
+
+## Running the Project
+
+### 1. Build the Extension
+
+Chrome extensions must be loaded from a built folder.
+
+```bash
+npm run build
+```
+
+This will generate the production files inside the `dist/` directory.
+
+---
+
+### 2. Load the Extension in Chrome
+
+1. Open Chrome and navigate to:
+
+```
+chrome://extensions
+```
+
+2. Enable **Developer Mode** (toggle in the top right corner).
+
+3. Click **Load unpacked**.
+
+4. Select the `dist` folder from the project directory.
+
+The **IntentTab extension** will now be installed and active.
+
+---
+
+### 3. Test the Extension
+
+- Open a **new tab** — the IntentTab interface should appear.
+- Enter an intent (e.g., _Search React docs_) and click **Continue**.
+- Navigate to a website and verify the **floating intent widget** appears.
+- Click the **extension icon** to open the popup dashboard and view recent intents.
